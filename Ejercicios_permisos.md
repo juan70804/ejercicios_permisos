@@ -36,7 +36,7 @@ No, el usuario Paulo pertenece a la categoría "otros" y no tiene permisos de es
 ### Seguimiento el problema anterior - ¿Qué comando tendría que realizar el usuario Paulo para poder mover el fichero anteriormente indicado al dispositivo USB?
 
  ```bash
-chmod +w
+$ chmod +w
 ```
 
 ### ¿Qué comando tendría que proporcionar el usuario Paulo para realizar el permiso anterior sin modificar los los permisos que ya tenía establecidos Roberto al prncipio?
@@ -131,7 +131,7 @@ El propietario tiene únicamente permisos de ejecución para el archivo "protein
 ¿Cómo estarían representados en sistema octal los permisos proporcionados en el **Problema 5**?
 
  ```bash
-chmod 137
+$ chmod 137
 ```
 ## Problema 7 - Examina la siguiente salida 
 
@@ -188,7 +188,7 @@ juanc@juan-linux:~/Desktop/Propio$ ls -lh
 ### Comando utilizado para asignar permisos
 
  ```bash
-chmod 764
+$ chmod 764
 ```
 
 ### Descripción de los números octales utilizados 
