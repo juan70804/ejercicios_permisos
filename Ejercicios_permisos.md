@@ -10,7 +10,7 @@
 
 Despues de visualizar las autorizaciones se te ocurre modificar el fichero de informefinal.txt ¿Es posible realizar alguna modificación?
 
-### **Respuesta**
+### Respuesta
 
 ```bash
 Si es posible, ya que presentamos permisos de lectura, escritura y ejecución como propietario, es por ello que podemos realizar modificaciones en los dos ficheros mostrados anteriormente.
@@ -24,7 +24,7 @@ Si es posible, ya que presentamos permisos de lectura, escritura y ejecución co
 
 ### Complemento del Problema 2 - Supongamos que deseas mover primerparcial.md a un dispositivo USB como usuario Paulo ¿Puedes hacerlo de acuerdo con las autorizaciones proporcionadas?
 
-### **Respuesta**
+### Respuesta
 
 ```bash
 No, el usuario Paulo pertenece a la categoría "otros" y no tiene permisos de escritura en el fichero indicado. Es por ello que no podrá mover el archivo propuesto.
@@ -41,7 +41,7 @@ chmod +w
 
 ### ¿Qué comando tendría que proporcionar el usuario Paulo para realizar el permiso anterior sin modificar los los permisos que ya tenía establecidos Roberto al prncipio?
 
-### **Respuesta**
+### Respuesta
 
 Roberto tenía al principio los siguientes datos en el ficher primerparcial.md
 
@@ -57,7 +57,7 @@ Entonces se tiene que modificar los permisos del último número, el cual es el 
 
  
 ```bash
-chmod 757
+$ chmod 757
 ```
 
 Con el comando anterior conservamos los permisos que estaban establecidos y únicamente añadimos permisos de escritura al resto para poder **mover** el archivo **primerparcial.md** a un dispostivo externo y podemos comprobarlo con el comando **ls -lh** 
@@ -65,6 +65,43 @@ Con el comando anterior conservamos los permisos que estaban establecidos y úni
 ```bash
 -rwxr-xrwx 1 Roberto Solaria 536K feb 19 00:00 primerparcial.md
 ```
+
+## Problema 3 - De acuerdo a la siguiente salida
+
+ ```bash
+drwxr-xr-- 1 Michel Grupo01 345K dec 28 13:17 Tareas 
+```
+
+Conforme a la salida de arriba ¿Qué tipo de fichero es? ¿Que tipos de usuarios pueden ingresar a dicho fichero?
+
+### Respuesta
+
+ ```bash
+Es un directorio porque al principio está representado con el simbolo "d". Únicamente el propietario Michel y los que pertenezcan a Grupo01 pueden ingresar al directorio de Tareas, el resto no tiene permisos de ejecución (pasar por).
+```
+¿Qué comando se debería de ejecutar para que cualquier usuario pueda ingresar al directorio Tareas sin modificar los permisos ya proporcionados en el fichero?
+
+### Respuesta 
+
+El directorio **Tareas** presenta todos los permisos, los que se encuentran dentro del **Grupo01** pueden leer e ingresar al directorio, el resto solamente puede leer. En sistema octal sería lo siguiente.
+
+ ```bash
+ 754
+```
+Entonces el número octal que se debe de modificar es el **4** porque pertenece a los permisos del **resto** u **otros**. El comando a realizar es el siguiente.
+
+ ```bash
+$ chmod 755
+```
+
+La salida generada sería la siguiente 
+
+ ```bash
+drwxr-xr-x 1 Michel Grupo01 345K dec 28 16:00 Tareas 
+```
+## Problema 4 - Analiza la siguiente vista
+
+
 
 
 
