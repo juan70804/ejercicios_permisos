@@ -107,11 +107,100 @@ De acuerdo a los permisos implementados ¿Cómo estarían representados en siste
 
 ### Respuesta 
 
-El documento **metadata.tsv** tiene permisos de escrituras para el **propietario** y **otros**, también existen permisos de lectura para el **grupo** y **otros** , entonces en sistema octal se representa como: 
+El documento **metadata.tsv** tiene permisos de escrituras para el **propietario** y **otros**, también existen permisos de lectura para el **grupo** y **otros**, entonces en sistema octal se representa como: 
 
  ```bash
 246 
 ```
+## Problema 5 - Dependiendo del tipo de usuario y con base a la siguiente salida
+
+ ```bash
+juanc@juan-linux:~/Desktop/ejemploficheros$ ls -lh
+---x-wxrwx 1 juanc juanc 178K feb 12 19:41 proteina.pdb 
+```
+¿Qué permisos están asignados para cada usuario?
+
+### Respuesta
+
+ ```bash
+El propietario tiene únicamente permisos de ejecución para el archivo "proteina.pdb", el grupo tiene permisos de escritura y ejecución y el resto presenta todos los permisos.
+```
+
+## Problema 6 - Representación en sistema octal
+
+¿Cómo estarían representados en sistema octal los permisos proporcionados en el **Problema 5**?
+
+ ```bash
+chmod 137
+```
+## Problema 7 - Examina la siguiente salida 
+
+ ```bash
+juanc@juan-linux:~/Desktop/Propio/Octavo_Semestre$ ls -lh
+d-wxr-xr-- 11 juanc juanc 4.0K jun 17  2021  cancermd
+```
+Con base a lo que hemos repasado, sabemos que es fichero **cancermd** es un directorio ¿Que tipos de usuarios no pueden modificar el directorio **cancermd**? 
+
+### Respuesta
+
+ ```bash
+Los usuarios asignados al grupo y el resto u otros no pueden modificar el directorio "cancermd".
+```
+## Problema 8 - Representación en sistema octal
+
+¿Cómo se representaría en sistema octal los permisos asignados en la salida del **Problema 7**? 
+
+### Respuesta 
+
+ ```bash
+354
+```
+## Problema 9 - Descripción de permisos proporconados de acuerdo al sistema octal
+
+De acuerdo a los siguientes números octales:
+
+ ```bash
+412
+```
+Describe los permisos asignados para cada tipo de usuario
+
+### Respuesta 
+
+ ```bash
+El propietario solamente tiene permisos de lectura, el grupo únicamente tiene permisos de ejecución y el resto u otros nadamás pueden modificarlo. 
+```
+## Problema 10 - Tu turno
+
+Piensa en algún archivo de tu computadora que sea demasiado importante para ti. 
+
+* Ahora debes indicar, ya sea mostrándome la salida donde se encuentre dicho fichero valioso con el comando **ls -lh**. Ojo, la salida debe visualizar los permisos que quieras proporcionarte como **propietari@** los que gustes asignar al **grupo** y que permisos le das al **resto**.
+
+* Escribe el comando completo que usaste para asignar ciertos permisos.
+
+* Descríbeme cada número octal que usaste
+
+### Posible respuesta  
+
+ ```bash
+juanc@juan-linux:~/Desktop/Propio$ ls -lh 
+-rwxrw-r--  4 juanc Solaria 4.0K jul  7  2021  Proyecto_investigación.odt
+```
+### Comando utilizado para asignar permisos
+
+ ```bash
+chmod 764
+```
+
+### Descripción de los números octales utilizados 
+
+* 7 -> asignado al propietario, presenta todos los permisos
+* 6 -> asignado al grupo, pueden leer y modificar el fichero indicado
+* 4 -> asignado al resto u otros, unícamente pueden leerlo
+
+## Pregunta opcional - ¿Porque decidite aplicar esos permisos? ¿Qué significa ese documento para ti?
+
+
+
 
 
 
