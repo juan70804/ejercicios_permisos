@@ -15,3 +15,25 @@
 ```bash
 Si es posible, ya que presentamos permisos de lectura, escritura y ejecución como propietario, es por ello que podemos realizar modificaciones en los dos ficheros mostrados anteriormente.
 ```
+
+## 2 - Imagina que logras ingresar al escritorio de Roberto con el usuario Paulo (que no forma parte del grupo Solaria) y visualizas lo siguiente con el comando ls -l 
+
+ ```bash
+-rwxr-x--- 1 Roberto Solaria 536K feb 19 00:00 primerparcial.md
+```
+
+### Supongamos que deseas mover primerparcial.md a un dispositivo USB como usuario Paulo ¿Puedes hacerlo de acuerdo con las autorizaciones proporcionadas?
+
+### **Respuesta**
+
+```bash
+No, el usuario Paulo pertenece a la categoría "otros", que no tiene ningún permiso en el fichero indicado. Es por ello que no podrá mover el archivo propuesto.
+```
+
+
+
+
+
+
+
+
