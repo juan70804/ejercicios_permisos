@@ -33,7 +33,7 @@ No, el usuario Paulo pertenece a la categoría "otros" y no tiene permisos de es
 ### Sistema binario 
 # ![imagen1](imagenes/sistemabinario.png "Sistema binario")
 
-### Seguimiento el problema anterior - ¿Que comando tendría que realizar el usuario Paulo para mover el fichero anteriormente indicado al dispositivo USB?
+### Seguimiento el problema anterior - ¿Que comando tendría que realizar el usuario Paulo para poder mover el fichero anteriormente indicado al dispositivo USB?
 
  ```bash
 chmod +w
@@ -155,7 +155,7 @@ Los usuarios asignados al grupo y el resto u otros no pueden modificar el direct
  ```bash
 354
 ```
-## Problema 9 - Descripción de permisos proporconados de acuerdo al sistema octal
+## Problema 9 - Descripción de permisos proporcionados de acuerdo al sistema octal
 
 De acuerdo a los siguientes números octales:
 
@@ -197,7 +197,7 @@ chmod 764
 * 6 -> asignado al grupo, pueden leer y modificar el fichero indicado
 * 4 -> asignado al resto u otros, unícamente pueden leerlo
 
-## Pregunta opcional - ¿Porque decidite aplicar esos permisos? ¿Qué significa ese documento para ti?
+## Pregunta opcional - ¿Porque decidiste aplicar esos permisos? ¿Qué significa ese documento para ti?
 
 
 
