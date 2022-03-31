@@ -107,7 +107,7 @@ De acuerdo a los permisos implementados ¿Cómo estarían representados en siste
 
 ### Respuesta 
 
-El documento **metadata.tsv** tiene permisos de escrituras para el propietario y otros, también existen permisos de lectura para el **grupo** y otros, entonces en sistema octal se representa como: 
+El documento **metadata.tsv** tiene permisos de escrituras para el **propietario** y **otros**, también existen permisos de lectura para el **grupo** y **otros** , entonces en sistema octal se representa como: 
 
  ```bash
 246 
