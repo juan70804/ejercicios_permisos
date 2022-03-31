@@ -33,7 +33,7 @@ No, el usuario Paulo pertenece a la categoría "otros" y no tiene permisos de es
 ### Sistema binario 
 # ![imagen1](imagenes/sistemabinario.png "Sistema binario")
 
-### Complementando el problema anterior ¿Que comando tendría que realizar el usuario Paulo para mover el fichero anteriormente indicado al dispositivo USB?
+### Seguimiento el problema anterior - ¿Que comando tendría que realizar el usuario Paulo para mover el fichero anteriormente indicado al dispositivo USB?
 
  ```bash
 chmod +w
@@ -53,14 +53,14 @@ Como propietario, Roberto presenta todos los permisos, los que pertenezcan al gr
 ```bash
 755
 ```
-Entonces se tiene que modificar los permisos del último número, el cual es el 5 (si los leemos de izquiera a derecha) debido a que es el número octal proporpocionado para aquellos que no pertenecen al grupo solaria, el comando necesario sería el siguiente.
+Entonces se tiene que modificar los permisos del último número, el cual es el 5 (si los leemos de izquiera a derecha) debido a que es el número octal proporpocionado para aquellos que no pertenecen al grupo Solaria, el comando necesario sería el siguiente.
 
  
 ```bash
 chmod 757
 ```
 
-Con el comando anterior conservamos los permisos que estaban establecidos y únicamente añadimos permisos de escritura al resto para poder mover el archivo **primerparcial.md** a un dispostivo externo y podemos comprobarlo con el comando **ls -lh** 
+Con el comando anterior conservamos los permisos que estaban establecidos y únicamente añadimos permisos de escritura al resto para poder **mover** el archivo **primerparcial.md** a un dispostivo externo y podemos comprobarlo con el comando **ls -lh** 
 
 ```bash
 -rwxr-xrwx 1 Roberto Solaria 536K feb 19 00:00 primerparcial.md
