@@ -103,6 +103,15 @@ drwxr-xr-x 1 Michel Grupo01 345K dec 28 16:00 Tareas
 
 # ![imagen1](imagenes/imagenproblema4.png "vista metadatos")
 
+De acuerdo a los permisos implementados ¿Cómo estarían representados en sistema octal?
+
+### Respuesta 
+
+El documento **metadata.tsv** tiene permisos de escrituras para el propietario y otros, también existen permisos de lectura para el **grupo** y otros, entonces en sistema octal se representa como: 
+
+ ```bash
+246 
+```
 
 
 
