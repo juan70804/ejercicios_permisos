@@ -7,7 +7,7 @@
 -rwx------ 1 juanc juanc 934K mar 27 03:32 proteasa.pdb
 ```
 
-## Despues de visualizar las autorizaciones se te ocurre modificar el fichero de informefinal.txt Es posible realizar alguna modificación?
+## Despues de visualizar las autorizaciones se te ocurre modificar el fichero de informefinal.txt ¿Es posible realizar alguna modificación?
 
 ### **Respuesta**
 
