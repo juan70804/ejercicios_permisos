@@ -101,7 +101,7 @@ drwxr-xr-x 1 Michel Grupo01 345K dec 28 16:00 Tareas
 ```
 ## Problema 4 - Analiza la siguiente vista
 
-
+# ![imagen1](imagenes/imagenproblema4.png "vista metadatos")
 
 
 
