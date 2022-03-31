@@ -30,7 +30,8 @@ Si es posible, ya que presentamos permisos de lectura, escritura y ejecución co
 No, el usuario Paulo pertenece a la categoría "otros", que no tiene ningún permiso en el fichero indicado. Es por ello que no podrá mover el archivo propuesto.
 ```
 
-
+### Sistema binario 
+# ![imagen1](imagenes/sistemabinario.png "Sistema binario")
 
 
 
