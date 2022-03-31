@@ -33,7 +33,7 @@ No, el usuario Paulo pertenece a la categoría "otros" y no tiene permisos de es
 ### Sistema binario 
 # ![imagen1](imagenes/sistemabinario.png "Sistema binario")
 
-### Seguimiento el problema anterior - ¿Que comando tendría que realizar el usuario Paulo para poder mover el fichero anteriormente indicado al dispositivo USB?
+### Seguimiento el problema anterior - ¿Qué comando tendría que realizar el usuario Paulo para poder mover el fichero anteriormente indicado al dispositivo USB?
 
  ```bash
 chmod +w
@@ -72,7 +72,7 @@ Con el comando anterior conservamos los permisos que estaban establecidos y úni
 drwxr-xr-- 1 Michel Grupo01 345K dec 28 13:17 Tareas 
 ```
 
-Conforme a la salida de arriba ¿Qué tipo de fichero es? ¿Que tipos de usuarios pueden ingresar a dicho fichero?
+Conforme a la salida de arriba ¿Qué tipo de fichero es? ¿Qué tipos de usuarios pueden ingresar a dicho fichero?
 
 ### Respuesta
 
@@ -139,7 +139,7 @@ chmod 137
 juanc@juan-linux:~/Desktop/Propio/Octavo_Semestre$ ls -lh
 d-wxr-xr-- 11 juanc juanc 4.0K jun 17  2021  cancermd
 ```
-Con base a lo que hemos repasado, sabemos que es fichero **cancermd** es un directorio ¿Que tipos de usuarios no pueden modificar el directorio **cancermd**? 
+Con base a lo que hemos repasado, sabemos que es fichero **cancermd** es un directorio ¿Qué tipos de usuarios no pueden modificar el directorio **cancermd**? 
 
 ### Respuesta
 
@@ -197,7 +197,7 @@ chmod 764
 * 6 -> asignado al grupo, pueden leer y modificar el fichero indicado
 * 4 -> asignado al resto u otros, unícamente pueden leerlo
 
-## Pregunta opcional - ¿Porque decidiste aplicar esos permisos? ¿Qué significa ese documento para ti?
+## Pregunta opcional - ¿Porqué decidiste aplicar esos permisos? ¿Qué significa ese documento para ti?
 
 
 
