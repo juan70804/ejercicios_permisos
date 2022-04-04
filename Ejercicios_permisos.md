@@ -156,8 +156,6 @@ drwxr-xr-x 1 Michel Grupo01 345K dec 28 16:00 Tareas
 
 La posición del dígito importa. Si la posición vale 1, los valores posibles son: Lectura = 4, Escritura = 2, Ejecución = 0
 
- 
-```
 ## Problema 4 - Analiza la siguiente vista
 
  ```bash
