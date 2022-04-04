@@ -241,8 +241,6 @@ El propietario solamente tiene permisos de lectura, el grupo únicamente tiene p
 | -rwx--x--x | 711 | El **propietario** tiene permisos de *lectura*, *escritura*, y *ejecución*; el **grupo** y **otros** únicamente de *ejecución*. | 
 | -rw-rw-rw-- | 666 | Todos tienen acceso a *lectura* y *escritura* en el archivo. **Usarlo de ser extremadamente necesario** | 
 | rwxrwxrwx | 777 | Todos tienen acceso total a *escritura*, *lectura*, y *ejecución*. **Estos permisos pueden ser peligrosos** |
-| | |
-
 
 ## Problema 10 - Tu turno
 
