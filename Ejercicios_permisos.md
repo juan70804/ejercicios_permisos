@@ -1,4 +1,50 @@
 
+# Permisos de administrador 
+
+Debido a la gran vulnerabilidad potencial al momento de proporcionar acceso local a cualquier archivo, es posible que existan problemas al no asignar los permisos adecuados a un archivo en específico o peor, una carpeta de trabajo. Entonces, en función de la necesidad de los permisos adecuados, repasaremos las formas de asignar permisos y les mostraremos algunos ejemplos en los que puede ser necesaria la modificación.
+
+¿Cómo visualizar los permisos en la terminal?
+
+Se pueden verificar los permisos de archivo o directorio ejecutando el siguiente comando
+
+```bash
+ls -lh
+```
+#### Tipos de permisos 
+
+* Lectura (readable) - se refiere a la capacidad de un usuario para leer el contenido del archivo.
+* Escritura (writeable) - se refueren a la capacidad de un usuario para escribir o modificar un archivo o directorio.
+* Ejecución (executable) - el permiso de ejecución afecta la capacidad de un usuario para ejecutar un archivo o ver el contenido de un directorio.
+
+### Sistema binario 
+|Valor octal final|2x10<sup>2</sup>|2x10<sup>1</sup>|2x10<sup>0</sup>|
+|--------| -------- | -------- | -------- |
+| | **r** | **w** | **x** |
+|<p align="center"> **0** </p>| <span style="color:blue"> *0*</span> | <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **1** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *1*</span> |
+|<p align="center"> **2** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **3** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
+|<p align="center"> **4** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **5** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> | <span style="color:green"> *1*</span> |
+|<p align="center"> **6** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **7** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
+
+## Estandarización
+
+Para cambiar los permisos de un archivo se emplea el comando chmod, que tiene el formato siguiente:
+
+```bash
+chmod [tipo de usuario] [operación] [permiso] archivo
+```
+
+* Tipo de usuario - Indica a quien va dirigido el permiso que se desea modificar.
+Pueden combinarse las letras **u** para el propietario, *g* para el grupo, **o** para otros usuarios, y *a* para todos los anteriores. **Si se salta este parámetro, el sistema supone a**
+* Operación - Indica la operación que se desea hacer con el permiso. Para dar un permiso se pondrá un **+**, y para quitarlo se pondrá un **-**.
+* Permiso - permiso Indica el permiso que se quiere otorgar o quitar. Será una combinación cualquiera de las letras anteriores : **r**, **w**, **x**.
+
+* Archivos - Nombres de los archivos que se pretenden modificar sus accesos.
+
+
 # Ejercicios de los permisos de Linux
 
 ## Problema 1 - Te encuentras navegando por los archivos **home** de tu computadora y mediante el comando **ls -lh** visualizas los permisos que tienen algunos archivos que de encuentran en el directorio de descargas
@@ -29,20 +75,6 @@ Si es posible, ya que presentamos permisos de lectura, escritura y ejecución co
 ```bash
 No, el usuario Paulo pertenece a la categoría "otros" y no tiene permisos de escritura en el fichero indicado. Es por ello que no podrá mover el archivo propuesto.
 ```
-
-### Sistema binario 
-|Valor octal final|2x10<sup>2</sup>|2x10<sup>1</sup>|2x10<sup>0</sup>|
-|--------| -------- | -------- | -------- |
-| | **r** | **w** | **x** |
-|<p align="center"> **0** </p>| <span style="color:blue"> *0*</span> | <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
-|<p align="center"> **1** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *1*</span> |
-|<p align="center"> **2** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
-|<p align="center"> **3** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
-|<p align="center"> **4** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
-|<p align="center"> **5** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> | <span style="color:green"> *1*</span> |
-|<p align="center"> **6** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
-|<p align="center"> **7** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
-
 
 ### Seguimiento el problema anterior - ¿Qué comando tendría que realizar el usuario Paulo para poder mover el fichero anteriormente indicado al dispositivo USB?
 
@@ -180,6 +212,21 @@ Describe los permisos asignados para cada tipo de usuario
  ```bash
 El propietario solamente tiene permisos de lectura, el grupo únicamente tiene permisos de ejecución y el resto u otros nadamás pueden modificarlo. 
 ```
+## Permisos comunes
+
+
+|Configuración |Número | Significado |
+| -------- | -------- | -------- |
+| -rw------- | 600 | Únicamente el propietario (*owner*) tiene permisos de *lectura* (readable) y *escritura* (writeable). |
+| -rw-r--r-- | 644 | Sólamente el *owner* tiene permisos de  *lectura* y *escritura*; el grupo y otros tienen acceso a *lectura*.
+| -rwx------ | 700 | Solo el *owner* tiene permisos de *lectura* y *ejecución* (executable). |
+| -rwxr-xr-x | 755 | El *owner* tiene permisos de *lectura*, *escritura* y *ejecución*; el grupo y otros solamente tienen acceso a *lectura* y *ejecución*. | 
+| -rwx--x--x | 711 | El *owner* tiene permisos de *lectura*, *escritura*, y *ejecución*; el grupo y otros únicamente de *ejecución*. | 
+| -rw-rw-rw-- | 666 | Todos tienen acceso a *lectura* y *escritura* en el archivo. **Usarlo de ser extremadamente necesario** | 
+| rwxrwxrwx | 777 | Todos tienen acceso total a *escritura*, *lectura*, y *ejecución*. **Estos permisos pueden ser peligrosos** |
+| | |
+
+
 ## Problema 10 - Tu turno
 
 Piensa en algún archivo de tu computadora que sea demasiado importante para ti. 
