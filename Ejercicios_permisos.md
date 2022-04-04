@@ -16,19 +16,6 @@ ls -lh
 * Escritura (**w**) - se refueren a la capacidad de un usuario para escribir o modificar un archivo o directorio.
 * Ejecución (**x**) - el permiso de ejecución afecta la capacidad de un usuario para ejecutar un archivo o ver el contenido de un directorio.
 
-### Sistema binario 
-|Valor octal final|2x10<sup>2</sup>|2x10<sup>1</sup>|2x10<sup>0</sup>|
-|--------| -------- | -------- | -------- |
-| | **r** | **w** | **x** |
-|<p align="center"> **0** </p>| <span style="color:blue"> *0*</span> | <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
-|<p align="center"> **1** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *1*</span> |
-|<p align="center"> **2** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
-|<p align="center"> **3** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
-|<p align="center"> **4** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
-|<p align="center"> **5** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> | <span style="color:green"> *1*</span> |
-|<p align="center"> **6** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
-|<p align="center"> **7** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
-
 ## Estandarización
 
 Para cambiar los permisos de un archivo se emplea el comando chmod, que tiene el formato siguiente:
@@ -142,7 +129,33 @@ $ chmod 755
 La salida generada sería la siguiente 
 
  ```bash
-drwxr-xr-x 1 Michel Grupo01 345K dec 28 16:00 Tareas 
+drwxr-xr-x 1 Michel Grupo01 345K dec 28 16:00 Tareas
+
+### Determinación del valor octal
+|Valor octal final|2x10<sup>2</sup>|2x10<sup>1</sup>|2x10<sup>0</sup>|
+|--------| -------- | -------- | -------- |
+| | **r** | **w** | **x** |
+|<p align="center"> **0** </p>| <span style="color:blue"> *0*</span> | <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **1** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *1*</span> |
+|<p align="center"> **2** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **3** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
+|<p align="center"> **4** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **5** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> | <span style="color:green"> *1*</span> |
+|<p align="center"> **6** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **7** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
+
+## Sistema binario 
+
+```bash
+110
+```
+**1**x2<sup>2</sup> + **1**x2<sup>1</sup> + **0**x2<sup>0</sup> = **4** + **2** + **0** = **6**
+
+### ¡Atento!
+
+La posición del dígito importa. Si la posición vale 1, los valores posibles son: Lectura = 4, Escritura = 2, Ejecución = 0
+
+ 
 ```
 ## Problema 4 - Analiza la siguiente vista
 
@@ -222,7 +235,7 @@ El propietario solamente tiene permisos de lectura, el grupo únicamente tiene p
 
 |Configuración |Número | Significado |
 | -------- | -------- | -------- |
-| -rw------- | 600 | Únicamente el propietario (*owner*) tiene permisos de *lectura* (readable) y *escritura* (writeable). |
+| -rw------- | 600 | Únicamente el **propietario** (*owner*) tiene permisos de *lectura* (readable) y *escritura* (writeable). |
 | -rw-r--r-- | 644 | Sólamente el **propietario** tiene permisos de  *lectura* y *escritura*; el **grupo** y **otros** tienen acceso a *lectura*.
 | -rwx------ | 700 | Solo el **propietario** tiene permisos de *lectura* y *ejecución* (executable). |
 | -rwxr-xr-x | 755 | El **propietario** tiene permisos de *lectura*, *escritura* y *ejecución*; el **grupo** y **otros** solamente tienen acceso a *lectura* y *ejecución*. | 
