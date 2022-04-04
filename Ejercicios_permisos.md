@@ -32,6 +32,7 @@ No, el usuario Paulo pertenece a la categoría "otros" y no tiene permisos de es
 
 ### Sistema binario 
 |Valor octal final|2x10<sup>2</sup>|2x10<sup>1</sup>|2x10<sup>0</sup>|
+| -------- | -------- | -------- | -------- |
 |   | r | w | x |
 | -------- | -------- | -------- | -------- |
 | 0 | <span style="color:blue"> *0*</span> | <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
