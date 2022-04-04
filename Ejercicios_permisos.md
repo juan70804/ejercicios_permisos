@@ -44,12 +44,7 @@ chmod +w fichero.txt
 chmod +x fichero.txt
 ```
 
-* Tipo de usuario - Indica a quien va dirigido el permiso que se desea modificar.
-Pueden combinarse las letras **u** para el propietario, *g* para el grupo, **o** para otros usuarios, y *a* para todos los anteriores. **Si se salta este parámetro, el sistema supone a**
-* Operación - Indica la operación que se desea hacer con el permiso. Para dar un permiso se pondrá un **+**, y para quitarlo se pondrá un **-**.
-* Permiso - permiso Indica el permiso que se quiere otorgar o quitar. Será una combinación cualquiera de las letras anteriores : **r**, **w**, **x**.
-
-* Archivos - Nombres de los archivos que se pretenden modificar sus accesos.
+Con el comando chmod es posible modificar los tipos de permisos para todos cualquier usuario. Probablemente se requiera asignar específicamente los permisos dependiendo de cada tipo de usuario, para ello necesitamos de la codificación de permisos. Para ello nos podemos apoyar con los siguientes problemas.
 
 
 # Ejercicios de los permisos de Linux
