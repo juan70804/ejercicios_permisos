@@ -84,21 +84,21 @@ No, el usuario Paulo pertenece a la categoría "otros" y no tiene permisos de es
 $ chmod +w
 ```
 
-### ¿Qué comando tendría que proporcionar el usuario Paulo para realizar el permiso anterior sin modificar los los permisos que ya tenía establecidos Roberto al prncipio?
+### ¿Qué comando tendría que proporcionar el usuario Paulo para realizar el permiso anterior sin modificar los los permisos que ya tenía establecidos Roberto al principio?
 
 ### Respuesta
 
-Roberto tenía al principio los siguientes datos en el ficher primerparcial.md
+Roberto tenía al principio los siguientes datos en el fichero **primerparcial.md**
 
 ```bash
 -rwxr-xr-x 1 Roberto Solaria 536K feb 19 00:00 primerparcial.md 
 ```
-Como propietario, Roberto presenta todos los permisos, los que pertenezcan al grupo Solaria tienen permisos de lectura y ejecución, lo mismo para el resto, en sistema octal está representado de la siguiente manera
+Como **propietario**, Roberto presenta todos los permisos, los que pertenezcan al grupo Solaria tienen permisos de lectura y ejecución, lo mismo para el resto, en sistema octal está representado de la siguiente manera
 
 ```bash
 755
 ```
-Entonces se tiene que modificar los permisos del último número, el cual es el 5 (si los leemos de izquiera a derecha) debido a que es el número octal proporpocionado para aquellos que no pertenecen al grupo Solaria, el comando necesario sería el siguiente.
+Entonces se tiene que modificar los permisos del último número, el cual es el 5 (si los leemos de izquierda a derecha) debido a que es el número octal proporpocionado para aquellos que no pertenecen al grupo Solaria, el comando necesario sería el siguiente.
 
  
 ```bash
@@ -223,10 +223,10 @@ El propietario solamente tiene permisos de lectura, el grupo únicamente tiene p
 |Configuración |Número | Significado |
 | -------- | -------- | -------- |
 | -rw------- | 600 | Únicamente el propietario (*owner*) tiene permisos de *lectura* (readable) y *escritura* (writeable). |
-| -rw-r--r-- | 644 | Sólamente el *owner* tiene permisos de  *lectura* y *escritura*; el grupo y otros tienen acceso a *lectura*.
-| -rwx------ | 700 | Solo el *owner* tiene permisos de *lectura* y *ejecución* (executable). |
-| -rwxr-xr-x | 755 | El *owner* tiene permisos de *lectura*, *escritura* y *ejecución*; el grupo y otros solamente tienen acceso a *lectura* y *ejecución*. | 
-| -rwx--x--x | 711 | El *owner* tiene permisos de *lectura*, *escritura*, y *ejecución*; el grupo y otros únicamente de *ejecución*. | 
+| -rw-r--r-- | 644 | Sólamente el **propietario** tiene permisos de  *lectura* y *escritura*; el **grupo** y **otros** tienen acceso a *lectura*.
+| -rwx------ | 700 | Solo el **propietario** tiene permisos de *lectura* y *ejecución* (executable). |
+| -rwxr-xr-x | 755 | El **propietario** tiene permisos de *lectura*, *escritura* y *ejecución*; el **grupo** y **otros** solamente tienen acceso a *lectura* y *ejecución*. | 
+| -rwx--x--x | 711 | El **propietario** tiene permisos de *lectura*, *escritura*, y *ejecución*; el **grupo** y **otros** únicamente de *ejecución*. | 
 | -rw-rw-rw-- | 666 | Todos tienen acceso a *lectura* y *escritura* en el archivo. **Usarlo de ser extremadamente necesario** | 
 | rwxrwxrwx | 777 | Todos tienen acceso total a *escritura*, *lectura*, y *ejecución*. **Estos permisos pueden ser peligrosos** |
 | | |
