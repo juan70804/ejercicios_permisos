@@ -44,7 +44,7 @@ chmod +w fichero.txt
 chmod +x fichero.txt
 ```
 
-Con el comando chmod es posible modificar los tipos de permisos para todos cualquier usuario. Probablemente se requiera asignar específicamente los permisos dependiendo de cada tipo de usuario, para ello necesitamos de la codificación de permisos. Para ello nos podemos apoyar con los siguientes problemas.
+Con el comando **chmod** es posible modificar los tipos de permisos para cualquier usuario. Probablemente se requiera asignar específicamente los permisos dependiendo de cada tipo de usuario, para ello necesitamos de la codificación de permisos. Para ello nos podemos apoyar con los siguientes problemas.
 
 
 # Ejercicios de los permisos de Linux
@@ -146,7 +146,10 @@ drwxr-xr-x 1 Michel Grupo01 345K dec 28 16:00 Tareas
 ```
 ## Problema 4 - Analiza la siguiente vista
 
-# ![imagen1](imagenes/imagenproblema4.png "vista metadatos")
+ ```bash
+juanc@juan-linux:~/Desktop/Propio/ampvis2$ ls -lh metadata.tsv 
+--w-r--rw- 1 juanc juanc 26 mar  3 06:43 metadata.tsv
+```
 
 De acuerdo a los permisos implementados ¿Cómo estarían representados en sistema octal?
 
