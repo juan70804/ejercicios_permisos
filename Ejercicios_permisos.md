@@ -34,7 +34,7 @@ No, el usuario Paulo pertenece a la categoría "otros" y no tiene permisos de es
 |Valor octal final|2x10<sup>2</sup>|2x10<sup>1</sup>|2x10<sup>0</sup>|
 |--------| -------- | -------- | -------- |
 | | **r** | **w** | **x** |
-|<p align="center"> // 0 </p>| <span style="color:blue"> *0*</span> | <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> 0 </p>| <span style="color:blue"> *0*</span> | <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
 |1| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *1*</span> |
 |2| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
 |3| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
