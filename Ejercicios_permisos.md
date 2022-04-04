@@ -130,6 +130,7 @@ La salida generada sería la siguiente
 
  ```bash
 drwxr-xr-x 1 Michel Grupo01 345K dec 28 16:00 Tareas
+```
 
 ### Determinación del valor octal
 |Valor octal final|2x10<sup>2</sup>|2x10<sup>1</sup>|2x10<sup>0</sup>|
