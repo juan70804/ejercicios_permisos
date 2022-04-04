@@ -12,9 +12,9 @@ ls -lh
 ```
 #### Tipos de permisos 
 
-* Lectura (readable) - se refiere a la capacidad de un usuario para leer el contenido del archivo.
-* Escritura (writeable) - se refueren a la capacidad de un usuario para escribir o modificar un archivo o directorio.
-* Ejecución (executable) - el permiso de ejecución afecta la capacidad de un usuario para ejecutar un archivo o ver el contenido de un directorio.
+* Lectura (**r**) - se refiere a la capacidad de un usuario para leer el contenido del archivo.
+* Escritura (**w**) - se refueren a la capacidad de un usuario para escribir o modificar un archivo o directorio.
+* Ejecución (**x**) - el permiso de ejecución afecta la capacidad de un usuario para ejecutar un archivo o ver el contenido de un directorio.
 
 ### Sistema binario 
 |Valor octal final|2x10<sup>2</sup>|2x10<sup>1</sup>|2x10<sup>0</sup>|
