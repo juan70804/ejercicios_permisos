@@ -1,3 +1,4 @@
+Hola estoy en mi lap ubuntu
 # Ejercicios de los permisos de Linux
 
 ## 1 - Te encuentras navegando por los archivos **home** de tu computadora y mediante el comando **ls -lh** visualizas los permisos que tienen algunos archivos que de encuentran en el directorio de descargas
