@@ -199,7 +199,7 @@ $ chmod 137
 juanc@juan-linux:~/Desktop/Propio/Octavo_Semestre$ ls -lh
 d-wxr-xr-- 11 juanc juanc 4.0K jun 17  2021  cancermd
 ```
-Con base a lo que hemos repasado, sabemos que es fichero **cancermd** es un directorio ¿Qué tipos de usuarios no pueden modificar el directorio **cancermd**? 
+Con base a lo que hemos repasado, sabemos que es fichero **cancermd** es un **directorio** ¿Qué tipos de usuarios no pueden modificar el directorio **cancermd**? 
 
 ### Respuesta
 
