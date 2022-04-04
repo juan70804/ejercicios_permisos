@@ -35,13 +35,13 @@ No, el usuario Paulo pertenece a la categoría "otros" y no tiene permisos de es
 |--------| -------- | -------- | -------- |
 | | **r** | **w** | **x** |
 |<p align="center"> **0** </p>| <span style="color:blue"> *0*</span> | <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
-|1| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *1*</span> |
-|2| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
-|3| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
-|4| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
-|5| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> | <span style="color:green"> *1*</span> |
-|6| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
-|7| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
+|<p align="center"> **1** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *1*</span> |
+|<p align="center"> **2** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **3** </p>| <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
+|<p align="center"> **4** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **5** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> | <span style="color:green"> *1*</span> |
+|<p align="center"> **6** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
+|<p align="center"> **7** </p>| <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
 
 
 ### Seguimiento el problema anterior - ¿Qué comando tendría que realizar el usuario Paulo para poder mover el fichero anteriormente indicado al dispositivo USB?
