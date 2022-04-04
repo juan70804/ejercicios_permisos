@@ -34,7 +34,14 @@ ls -lh
 Para cambiar los permisos de un archivo se emplea el comando chmod, que tiene el formato siguiente:
 
 ```bash
-chmod [tipo de usuario] [operación] [permiso] archivo
+chmod [Opciones] [Archivos] 
+```
+Las posibles opciones para indicar el permiso que ocupemos proporcionar a cierto archivo pueden ser:
+
+```bash
+chmod -r fichero.txt
+chmod +w fichero.txt
+chmod +x fichero.txt
 ```
 
 * Tipo de usuario - Indica a quien va dirigido el permiso que se desea modificar.
